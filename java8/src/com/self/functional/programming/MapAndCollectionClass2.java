@@ -28,6 +28,11 @@ public class MapAndCollectionClass2 {
                     return new Employee(1,res,100.00);
                 }).collect(Collectors.toList());
         System.out.println(employeeList);
+
+        // --------- Sum
+       double sum = employeeList.stream().mapToDouble(Employee:: getSalary)
+                .sum();
+       System.out.println(sum);
     }
 }
 
