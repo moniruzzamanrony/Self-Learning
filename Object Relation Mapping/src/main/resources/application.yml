@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: hibernate-jpa-learning
+  datasource:
+    url: jdbc:mysql://localhost:3306/springbootdb
+    username: root
+    password:
+  jpa:
+    hibernate:
+      ddl-auto: update
+server:
+  port: 3000
