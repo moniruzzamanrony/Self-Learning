@@ -9,12 +9,14 @@
         <outputRelativeToContentRoot value="true" />
         <module name="spring" />
         <module name="object-relational-mapping" />
+        <module name="spring-boot-testing" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="hibernate-jpa" target="11" />
       <module name="object-relational-mapping" target="11" />
       <module name="spring" target="11" />
+      <module name="spring-boot-testing" target="11" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
@@ -22,6 +24,7 @@
       <module name="hibernate-jpa" options="-parameters" />
       <module name="object-relational-mapping" options="-parameters" />
       <module name="spring" options="-parameters" />
+      <module name="spring-boot-testing" options="-parameters" />
     </option>
   </component>
 </project>

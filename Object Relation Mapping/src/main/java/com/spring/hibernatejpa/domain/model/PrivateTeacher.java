@@ -5,15 +5,13 @@ import lombok.*;
 import javax.persistence.*;
 import java.io.Serializable;
 
-@EqualsAndHashCode(callSuper = true)
+@Data
 @Entity
-@Setter
-@Getter
 @NoArgsConstructor
 @Table(name = "private_techers")
-public class PrivateTeacher  extends BaseEntity implements Serializable {
+public class PrivateTeacher extends BaseEntity implements Serializable {
     @Id
-    @GeneratedValue(strategy= GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
     private String name;

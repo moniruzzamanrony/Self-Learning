@@ -6,6 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/java8/java8.iml" filepath="$PROJECT_DIR$/java8/java8.iml" />
       <module fileurl="file://$PROJECT_DIR$/Object Relation Mapping/object-relational-mapping.iml" filepath="$PROJECT_DIR$/Object Relation Mapping/object-relational-mapping.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-boot-basic/spring.iml" filepath="$PROJECT_DIR$/spring-boot-basic/spring.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-boot-testing/spring-boot-testing.iml" filepath="$PROJECT_DIR$/spring-boot-testing/spring-boot-testing.iml" />
     </modules>
   </component>
 </project>

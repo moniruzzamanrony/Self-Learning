@@ -1,13 +1,12 @@
 package com.spring.hibernatejpa.dto;
 
-import com.spring.hibernatejpa.domain.model.BaseEntity;
+import lombok.Builder;
 import lombok.Data;
 
-import javax.persistence.*;
-
 @Data
+@Builder
 public class PrivateTeacherDto {
-    private String name;
 
+    private String name;
     private String phone;
 }

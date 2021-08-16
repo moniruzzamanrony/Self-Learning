@@ -19,7 +19,7 @@ import java.util.List;
 public class PrivateTeacherService {
     private final PrivateTeacherRepo privateTeacherRepo;
 
-    public ResponseEntity save(PrivateTeacherDto privateTeacherDto) {
+    public ResponseEntity<PrivateTeacher> save(PrivateTeacherDto privateTeacherDto) {
         try {
             PrivateTeacher privateTeacher = new PrivateTeacher();
             BeanUtils.copyProperties(privateTeacherDto, privateTeacher);
@@ -31,7 +31,7 @@ public class PrivateTeacherService {
 
     }
 
-    public ResponseEntity getPrivateTeachers(PageRequest pageRequest, String name) {
+    public ResponseEntity<PrivateTeacher> getPrivateTeachers(PageRequest pageRequest, String name) {
         try{
             return new ResponseEntity(privateTeacherRepo.findAllByNameUsingJPQL(name,pageRequest),HttpStatus.OK);
         }catch (DataAccessException ignored) {
